@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<fieldset>
+	<legend>Convert Temperature</legend>
+	<input id="inputNumber" type="number"></br>
+
+	<input id="fahr" type="radio"><label for="radio">Fahrenheit</label>
+	<input id="celc" type="radio"><label>Celcius</label></br>
+	
+	<input id="submit" type="button" value="Submit">
+	<input id="clear" type="button" value="Clear">
+</fieldset>	
+
+<fieldset>
+	<legend>Your Answer Is: </legend>
+	<div id="output"></div>
+</fieldset>
+
+<script type="text/javascript" src="converter.js"></script>
+</body>
+</html>
+
+<!-- In the HTML, have one input field where someone can enter in a temperature.
+Create a radio button group where Celsius or Fahrenheit can be selected as the scale that the number should be converted to.
+Create a block level element that will hold the text of the converted temperature.
+Create a button that, when clicked, displays the converted temperature.
+Create another button that, when clicked, clears any text in the input field.-->
+<!-- 
+Add an event handler to the input field that checks if the user pressed the enter key, and if that happens, perform the conversion.
+If the temperature is greater than 90F/32C the color of the converted temperature should be red.
+If the temperature is less than 32F/0C the color of the converted temperature should be blue.
+For any other temperature, the color should be green.-->

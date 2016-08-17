@@ -1,0 +1,9 @@
+body {
+	margin: 50px 200px;
+}
+
+legend,
+input,
+div {
+	margin: 10px;
+}
