@@ -2,7 +2,7 @@ var submitButton = document.getElementById("submit");
 var clearButton = document.getElementById("clear");
 var userInput = document.getElementById("inputNumber");
 var output = document.getElementById("output");
-console.log(output);
+
 //T(°C) = (T(°F) - 32) × 5/9 
 function toCelsius (input) {
 	var input = userInput.value;
