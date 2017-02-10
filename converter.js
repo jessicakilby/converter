@@ -45,20 +45,22 @@ function determineConverter () {
 			toFahrenheit(); 
 			console.log("Fahrenheit was checked");
 			output.innerHTML += "<div>" + output.value + "</div>"
-		} else {
-			console.log("Nothing or both were checked");
-			}	
+	} else {
+		console.log("Nothing or both were checked");
+	}	
 }
 
 function enterKeyPressed(keypress){
- if (keypress.which === 13) {
-   determineConverter();
- }
+	if (keypress.which === 13) {
+	   determineConverter();
+	}
 }
 
 function clear() {
 	document.getElementById("output").innerHTML = "";
 	document.getElementById("inputNumber").value = "";
+	document.getElementById("fahr").checked = false;
+	document.getElementById("celc").checked = false;
 }
 
 submitButton.addEventListener("click", determineConverter);
